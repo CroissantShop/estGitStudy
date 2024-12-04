@@ -1,0 +1,73 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.navi {
+    display: flex;
+    gap: 20px;
+    /*아이템 관련 속성 (간격조정)*/
+}
+
+.navi>a {
+    color: white;
+}
+
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #34495e;
+    color: white;
+}
+
+.sidebar-item {
+    padding: 15px;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.content-area {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex: 1;
+    background-color: #ecf0f1;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    background-color: gray;
+    color: white;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+h1:nth-child(1) {
+    text-shadow: 5px 5px;
+}
+
+h1:nth-child(2) {
+    color: orange;
+    text-shadow: -10px -10px orangered;
+}
+
+h1:nth-child(3):hover {
+    text-shadow: 0 0 5px lightcoral, 0 0 10px olive;
+}
+
+h1:nth-child(4) {
+    color: aliceblue;
+    text-shadow: 1px 1px 3px black, 0 0 15px cornflowerblue, 0 0 8px red;
+}
+
+div {
+    width: 250px;
+    height: 125px;
+    padding: 15px;
+    margin: 20px;
+    background-color: wheat;
+}
+
+div:nth-of-type(1) {
+    /*그림자 효과 부여를 위해서는 기본적으로 수평 수직 이동은 필수*/
+    box-shadow: 10px 10px 10px;
+}
+
+div:nth-of-type(2) {
+    /* inset은 선언 해야지만이 효과를 받음 */
+    box-shadow: inset 10px 10px 10px;
+}
+
+div:nth-of-type(3) {
+    box-shadow: 10px 10px 5px 5px green;
+}

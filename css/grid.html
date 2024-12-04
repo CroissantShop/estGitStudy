@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/grid.css">
+</head>
+
+<body>
+    <!-- grid : 2차원 레이아웃 시스템
+     - flex의 약점을 극복하고자 나온 개념
+       (1차원 레이아웃, 정렬 제한성)
+     - 행과 열을 동시에 제어하는 특징이 있음
+     - 과거에는 크로스 브라우징 이슈에 취약(IE)
+     - 좌표기반 레이아웃
+     - 수학적 그리드 시스템과 유사한 논리
+     그리드 트랙 계산 알고리즘
+     트랙 크기 = (전체 컨테이너 크기 - 고정 간격) ÷ 가변 트랙 수 
+    주의사항 : 유지보수성은 글쎄요 
+    
+    그리드 컨테이너 : 그리드의 전체 영역 정의.
+    그리드 아이템 : 컨테이너의 자식요소들. grid 규칙에 의해 배치.
+    그리드 트랙 : 그래드의 행 이나 열
+    그리드 셀 : 그리드의 한칸(아이템 하나가 들어가는 공간)
+    그리드 라인 : 그리드의 셀을 구분하는 선
+    그리드 갭 : 셀 사이의 간격
+    그리드 에어리어 : 그리드 셀의 집합
+
+    그리드 속성(컨테이너)
+    grid-template-rows : 명시적으로 행(row, track)의 크기를 정의
+     - repeat(반복진행함수 / 반복횟수, 크기(1fr))
+     - fr(fraction(공간 비율))
+    grid-template-columns : 명시적으로 열(column, cell)의 크기를 정의
+    grid-template-areas : 지정된 그리드 영역 이름을 참조해 그리드 템플릿을 생성.
+     - 정확히는 item 속성
+    grid-template(short hand)
+
+    gap(short hand)
+    row-gap
+    column-gap
+
+    grid
+    grid-auto-rows : 암시적으로 행의 크기를 지정하는 속성
+    grid-auto-columns : 암시적으로 열의 크기를 지정하는 속성
+    
+    grid-auto-flow
+     - 배치하지 않은 아이템을 어떻게 처리할지 정의하는 속성
+     1. row : 각 행 축을 따라 차례로 배치
+     2. column : 각 열 축을 따라 차례로 배치
+     3. row dense : 각 행 축을 따라 차례로 배치, 빈 영역 메워줌.
+     4. column dense : 각 열축을 따라 차례로 배치, 빈 영역 메워줌
+
+
+    align-content : flex의 align-content와 동일함
+     - 그리드 컨텐츠의 새로 너비(넓이)가 그리드 컨테이너보다 작아야함.
+     1. start : 시작점 정렬
+     2. center : 중간 정렬
+     3. end : 끝 정렬
+     4. space-around : 각 행 위아래 여백을 고르게 정렬
+     5. space-between : 첫 행은 시작점, 끝 행은 끝점에 정렬, 나머지 여백으로 고르게
+     6. space-evenly : 모든 여백을 고르게 정렬
+     7. stretch : 열축 스트레칭(열축을 채우기위해 그리드를 늘림)
+    justify-content
+     - align-content와 동일속성(기능도 같지만 수평정렬.)
+    place-content
+    align-items
+    justify-items
+    place-items
+
+    -->
+    <!-- <div class="grid-container">
+        <header>헤더</header>
+        <nav>네비</nav>
+        <main>메인</main>
+        <footer>푸터</footer>
+    </div> -->
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+        <!-- <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div> -->
+    </div>
+
+</body>
+
+</html>

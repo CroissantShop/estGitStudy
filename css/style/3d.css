@@ -1,0 +1,18 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.menu-item {
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: perspective(500px) rotateX(-60deg) translateZ(50px);
+
+}

@@ -1,0 +1,29 @@
+body {
+
+    /* 기본적으로 body에 imgage를 배경으로 둔다면 바둑판식 배열이 기본값
+    no-repeat이라는 속성값을 부여해 반복을 없앨 수 있으며
+    x, y축의 제어도 가능
+
+    no-repeat : 반복제거
+    repeat-x, repeat-y 속성값을 이용해
+    x축이나, y축으로만 반복을 진행하는 것도 가능
+    */
+
+    /* background-image: url(../image/loopy_winter.png);
+    background-repeat: no-repeat; */
+    /* background-repeat: repeat-y; */
+    /* background-position : 150px 250px;
+    background-attachment: fixed;
+
+    /*
+    background shorthand
+    color || image || repeat || attachment || position
+    */
+}
+
+
+div {
+    width: 300px;
+    height: 300px;
+    background: red url(../image/loopy_winter.png) no-repeat fixed 50px 50px;
+}

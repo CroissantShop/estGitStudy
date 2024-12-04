@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoverZoomIn</title>
+    <style>
+        /* 가로 수평, 가운데 정렬, 간격 */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 100px;
+        }
+
+        .box {
+            /* 상자 안 텍스트 중앙 정렬 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 2px solid black;
+            background-color: white;
+            width: 150px;
+            height: 150px;
+
+            /* 기초, 고급 위치 변경시 필요 (기존 자리 기준으로 위치 이동) */
+            position: relative;
+
+        }
+
+        /* 상위 요소인 박스 기준으로 글자 위치 지정 */
+        .basic {
+            color: red;
+            position: absolute;
+            top: -35px;
+        }
+
+        .advanced {
+            color: blue;
+            position: absolute;
+            bottom: -35px;
+        }
+
+        /* hover 시 애니메이션 */
+        .box:hover {
+            transform: scale(1.1);
+            /* 이미지 확대 */
+            transition: transform .5s;
+            /* 시간 설정 */
+        }
+
+        /* hover 후 애니메이션 */
+        .box {
+            transform: scale(1.0);
+            /* 이미지 확대 */
+            transition: transform .5s;
+            /* 시간 설정 */
+        }
+
+        /* 첫번째 요소 바로 뒤에 위치 하면서 같은 부모 공유하는 두번째 요소 선택 = 인접형제결합자 +사용 */
+        .box:hover+.box {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">HTML
+            <span class="basic">기초</span>
+        </div>
+
+        <div class="box">CSS</div>
+
+        <div class="box">JavaScript
+            <span class="advanced">고급</span>
+        </div>
+    </div>
+</body>
+
+</html>

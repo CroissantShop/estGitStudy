@@ -1,0 +1,121 @@
+a {
+    display: inline-block;
+    width: 350px;
+    height: 60px;
+}
+
+a:hover {
+    background-color: cornflowerblue;
+}
+
+input[type="text"] {
+    color: darkgoldenrod;
+}
+
+input[type="text"]:focus {
+    color: darkcyan;
+}
+
+a:link {
+    background-color: skyblue;
+}
+
+a:visited {
+    background-color: yellowgreen;
+}
+
+a:active {
+    background-color: olive;
+}
+
+/*
+input태그 중에서 선택이 가능한 요소들 중
+인접한 span태그의 글자 색상을 green색으로 
+지정하겠다.
+*/
+
+/* 
+input:enabled+span {
+    color: green;
+}
+
+input:disabled+span {
+    color: gray;
+    text-decoration: line-through;
+}
+
+input:checked+span {
+    color: red;
+} */
+
+/* 구조의사 예시 */
+
+/*p태그(요소) 중 첫번째 자식인 요소들을 모두 선택
+(p 태그 중 첫번째 자식인 요소들만 선택)
+2번째 아래일 경우는 선택x
+p:first-child {
+    background-color: teal;
+} 
+
+p:last-child {
+    background-color: teal;
+}
+*/
+
+/*nth-child의 경우는 다른 셀렉터를 활용해서 선택하는 것을 권유
+nth-child에 쓰는 숫자는 수열공식을 기반으로 진행된다.
+*/
+/* div>p:nth-child(2n+1) {
+    background-color: aqua;
+}
+
+div>p:nth-of-type(2n-1) {
+    background-color: aqua;
+}*/
+
+/*인풋태그에 패스워드 타입이 아닌건 다 steelblue로 바꿔라*/
+/*
+부정선택자
+ input:not([type=password]) {
+    background-color: steelblue;
+} */
+
+/*
+
+*/
+/* 
+input[type="text"] {
+    color: white;
+}
+
+input[type="text"]:valid {
+    background-color: slateblue;
+    color: white;
+}
+
+input[type="text"]:invalid {
+    background-color: red;
+    color: white;
+} */
+
+/* p::first-letter {
+    font-size: 4rem;
+}
+
+p::first-line {
+    color: blue;
+} */
+
+h1::before {
+    content: "군침이";
+    color: aqua;
+}
+
+h1::after {
+    content: "싹도노";
+    color: red;
+}
+
+::selection {
+    background-color: yellow;
+}

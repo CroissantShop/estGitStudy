@@ -1,0 +1,150 @@
+/* .sizepx {
+    font-size: 30px;
+}
+
+.sizeEm {
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sizePer {
+    font-size: 150%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sizePro {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+* {
+    font-size: 25px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold2 {
+    /* font-weight: bolder; */
+    font: italic bolder 40px times;
+}
+
+.btn {
+    width: 200px;
+    height: 90px;
+    background-color: lightpink;
+    border-radius: 30px;
+}
+
+/* a {
+    display: block;
+    font-size: 25px;
+    color: olivedrab;
+    text-align: center;
+    글자꼴 수평
+    line-height: 90px;
+    글자 수직정렬 - 요소의 높이와 맞출 것
+}
+
+*/
+.spa1 {
+    letter-spacing: 5px;
+}
+
+.spa2 {
+    letter-spacing: -5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: right;
+}
+
+#left {
+    text-align: left;
+}
+
+#just {
+    text-align: justify;
+}
+
+#test1 {
+    text-align: center;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+/* p {
+    text-decoration: line-through;
+    color: lightblue;
+    cursor: pointer;
+    링크가 있는 것처럼 보이게끔 설정하는 속성
+} */
+/* 
+.d {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid black;
+} */
+
+
+/* .nor {
+    white-space: normal;
+} */
+/* 
+.nowrap {
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.pre {
+    white-space: pre;
+}
+
+.p-wrap {
+    white-space: pre-wrap;
+}
+
+.p-line {
+    white-space: pre-line;
+} */
+
+
+div {
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    margin: 30px;
+    border: 5px solid black;
+    /* white-space: nowrap;
+    overflow: hidden; */
+    /* overflow-x: scroll; */
+}
+
+.ell {
+    text-overflow: ellipsis;
+}
+
+.w-wrap {
+    word-wrap: break-word;
+}
+
+.w-break {
+    word-wrap: break-all;
+}

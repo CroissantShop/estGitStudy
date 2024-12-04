@@ -1,0 +1,29 @@
+div {
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    /* display: inline-block; */
+    opacity: 0.2;
+    transition: opacity 3s;
+}
+
+/* a {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    display: inline-block;
+} */
+
+#test1 {
+    /* display: none;
+    visibility: hidden;
+    */
+}
+
+#test2 {
+    /* opacity: 0.5; */
+}
+
+div:hover {
+    opacity: 1;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>개발자 커리어 설문조사</h1>
+
+    <fieldset>
+        <legend>개인 정보</legend>
+        <label for="name">이름:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">이메일: </label>
+        <input type="email" id="email">
+        <label for="age">나이: </label>
+        <input type="age">
+    </fieldset>
+
+    <fieldset>
+        <legend>개발 경력</legend>
+
+        주력 언어:
+        <select name="language" id="" multiple>
+            <option value="javaScript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+        </select>
+
+        경력 연차:
+        <input type="range" name="points" min="0" max="20" step="1" value="10">
+        <input type="checkbox" name="job" id="jobb"> 현재 구직 중
+    </fieldset>
+
+    <fieldset>
+        <legend>추가 의견</legend>
+        <textarea name="comments" id="commentss"></textarea>
+    </fieldset><br>
+    <button>제출</button>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+* {
+    font-size: 30px;
+}
+
+/* 
+속성 선택자 1
+a[href]{
+    color: crimson;
+}
+속성 선택자2
+input[type="text"]{
+    color:hotpink;
+} 
+속성 선택자 3    
+.head[class~="fir"]{
+    color:red;
+}
+속성 선택자 4
+h1[class|="heading"]{
+    color:red;
+}
+
+속성 선택자 5
+
+
+속성 선택자 6
+.head[class$="fir"]{
+    color:red;
+}
+
+속성 선택자 7
+h1[class*="fir"] {
+    color: red;
+}
+
+자식 선택자 예시
+div>p {
+    font-weight: bolder;
+    color: brown;
+}
+
+일반 동위 선택자 예시
+*/
+
+div+p {
+    font-size: 50px;
+    background-color: lightgreen;
+}

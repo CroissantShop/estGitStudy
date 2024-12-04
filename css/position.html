@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/position.css">
+</head>
+
+<body>
+    <!-- position : 요소의 위치를 정의하는 속성(property)
+   position은 top, left, right, bottom 프로퍼티를 이용하여
+   요소의 위치를 조정하는 방식
+   부유! 띄운다!
+   주의사항 : position이 static인 속성은 당연히 써봐야 의미 없음
+   
+    1. static : 기본값(요소들은 기본적으로 static 상태)
+        - 모든 요소들은 부모 요소의 위치를 기준으로 배치되는 것이 일반적
+        (상위 요소가 없을 때 중심은 <body>)
+        - static은 기본적으로 직접 선언할 일은 드물음
+        (다만 추후 JS를 활용하여 position을 무력화 시킬 때
+        사용하는 경우는 간혹 있음)
+        - 좌표 프로퍼티를 적용해도 static일 경우는 무시됨
+    2. relative : 기본위치(static으로 지정했을시 위치)를 기준으로
+        좌표프로퍼티를 사용해 위치를 이동시키는 속성
+        static과 차이점은 좌표프로퍼티 적용 가능 차이
+    3. absolute : 부모요소 혹은 가장 가까운 상위요소를 기준으로 좌표만큼 이동시키는 속성
+        - 주의사항 : static에는 반응하지 않음
+        (부모(상위)요소가 static이라면 반응하지 않음.)
+        - 상위요소가 없다면 body를 기준으로 좌표를 잡음
+        - 부모 요소를 기준으로 삼기 위해서는 부모에 relative를 적용시키는 편
+        - absolute 또한 해당 객체를 띄우는 편(부유 객체)
+        - absolute가 적용이 되면 넓이 또한 적절한 지정이 필요
+    4. fixed : 요소를 고정시키는 속성
+        - 부모요소와 상관없이 브라우저의 viewport를 기준으로
+        좌표프로퍼티를 사용하여 위치를 이동
+        - 주의사항 : pixed 선언시 block요소는 inline과 비슷해짐
+        (컨텐츠 영역을 기준으로 넓이를 가져간다.)
+        즉, fixed를 사용하기 위해서는 넓이를 지정할 필요가 있음
+    5. z-index : 부유 객체의 화면 출력 순서를 조정하는 속성
+        - modal에서 유용하게 쓸 수 있음
+        - 숫자로 컨트롤하면 편함
+    6. sticky : 처음에는 relative처럼 동작하다가
+        스크롤시 지정 지점에서 요소를 고정시키는 속성
+        - 사용하기에 조건이 까다로운 속성
+    6-1 sticky 사용조건
+        - 자신의 부모요소 안에서만 작동
+        - 부모태그에 '무.조.건' height가 필요 (패딩으로 컨트롤 X)
+        (부모의 높이만큼 sticky가 고정되기 때문)
+        - 부모요소 중에 overflow 적용이 되어있으면 사용 불가능
+        - IE(internet Explorer) 
+
+
+넓이와 높이가 150px인 정사각형 상자 2개 만들어주세요.
+
+내가 스타일을 제대로 적용했는데(css를 올바르게 썼는데)
+스타일 적용이 잘 안되는 경우가 간혹 발생할 수 있음.
+1. 오타 점검
+2. css 링크 확인(body에 배경색 넣고 확인 해보기)
+3. 우선순위 점검(코드가 길어졌을 경우)
+4. 캐시 문제
+-->
+
+    <!-- <div id="one">1번</div>
+    <div id="two">2번</div> -->
+
+    <div class="parent">
+        <div class="abs">
+            absolute 적용(상위요소 있음)
+        </div>
+    </div>
+
+    <div class="abs">
+        absolute 적용(상위요소 없음)
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

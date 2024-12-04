@@ -1,0 +1,39 @@
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: steelblue;
+    animation-name: yoon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yoon {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: orange;
+    }
+
+    25% {
+        bottom: 400px;
+        background-color: olive;
+    }
+
+    50% {
+        left: 400px;
+        background-color: aquamarine;
+    }
+
+    75% {
+        top: 400px;
+        background-color: black;
+    }
+
+    100% {
+        background-color: red;
+        left: 200;
+        top: 200;
+    }
+}

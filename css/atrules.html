@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atrules</title>
+</head>
+
+<body>
+
+    at-rule : w3c에서 규정하고 있는 대표적인 규칙들
+    - css에서 특정한 동작을 정의하는 규칙
+    - @로 시작
+    - 스타일시트의 메타데이터나 조건부 로직등을 제어
+
+    @import : css에 외부 스타일시트를 불러올 때 사용하는 문법
+    ex) @import url('css경로, 이름')
+    - 주의사항 : 외부 css도 불러올 수 있기 때문에 페이지의 성능저하를 유발할 수 있음
+    (필요한 만큼만 선언하는 것이 가장 좋음)
+
+    @font-face : 웹 폰트 정의
+
+    @media : 미디어쿼리때 설명
+
+    @keyframes : css 애니메이션 정의
+
+    @supports : 브라우저 지원여부 확인
+    -> 브라우저가 그리드를 지원하지 않으면 플렉서블박스로 변경할 것
+    ex) @supports not (display:gid) {
+    .container {
+    display: flex;
+    }
+
+    @page : 인쇄할 문서의 스타일 지정
+
+</body>
+
+</html>

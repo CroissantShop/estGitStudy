@@ -1,0 +1,11 @@
+#fix {
+    background-color: lightcoral;
+    width: 250px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    z-index: -1;
+}
